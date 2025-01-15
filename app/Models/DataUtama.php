@@ -6,6 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class DataUtama extends Model
 {
-
-    protected $table = 'data_utama';
+    protected $table = 'data_utama' ;
 }
