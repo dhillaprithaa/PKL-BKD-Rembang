@@ -1,6 +1,5 @@
 @extends('layouts.master')
 
-
 @section('content')
     <section class="content-header text-center">
         <h1>
@@ -12,32 +11,31 @@
         </ol>
         <br> <br>
 
-        <div class="table-container" style="flex: 1;">
+        <div class="table-container" style="flex: 1; max-width: 800px; margin: auto;">
             <h4 class="text-center">Laporan Masuk Pengaduan Masyarakat</h4>
             <div class="table-responsive">
-                <table class="table table-bordered"
-                    style="background-color: white; border: 2px solid black;margin-top:10px;">
+                <table class="table" style="background-color: white; margin-top:10px; width: 100%;">
                     <thead style="background-color: #f8f9fa;">
-                        <tr style="border-bottom: 2px solid black;">
-                            <th class="text-center" style="border-right: 2px solid black;">Tahun</th>
-                            <th class="text-center" style="border-right: 2px solid black;">Status Laporan</th>
+                        <tr>
+                            <th class="text-center">Tahun</th>
+                            <th class="text-center">Status Laporan</th>
                             <th class="text-center">Total</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr style="border-bottom: 1px solid black;">
-                            <td class="text-center" style="border-right: 2px solid black;">2025</td>
-                            <td class="text-center" style="border-right: 2px solid black;">Dalam Proses/Pending</td>
+                        <tr>
+                            <td class="text-center">2025</td>
+                            <td class="text-center">Dalam Proses/Pending</td>
                             <td class="text-center">1000</td>
                         </tr>
-                        <tr style="border-bottom: 1px solid black;">
-                            <td class="text-center" style="border-right: 2px solid black;">2025</td>
-                            <td class="text-center" style="border-right: 2px solid black;">Selesai</td>
+                        <tr>
+                            <td class="text-center">2025</td>
+                            <td class="text-center">Selesai</td>
                             <td class="text-center">1000</td>
                         </tr>
-                        <tr style="border-bottom: 1px solid black;">
-                            <td class="text-center" style="border-right: 2px solid black;">2025</td>
-                            <td class="text-center" style="border-right: 2px solid black;">Belum Diproses</td>
+                        <tr>
+                            <td class="text-center">2025</td>
+                            <td class="text-center">Belum Diproses</td>
                             <td class="text-center">1000</td>
                         </tr>
                     </tbody>
@@ -46,29 +44,28 @@
 
             <h4 class="text-center">Hasil Survey Kepuasan Pengaduan Masyarakat</h4>
             <div class="table-responsive">
-                <table class="table table-bordered"
-                    style="background-color: white; border: 2px solid black;margin-top:10px;">
+                <table class="table" style="background-color: white; margin-top:10px; width: 100%;">
                     <thead style="background-color: #f8f9fa;">
-                        <tr style="border-bottom: 2px solid black;">
-                            <th class="text-center" style="border-right: 2px solid black;">Tahun</th>
-                            <th class="text-center" style="border-right: 2px solid black;">Status Laporan</th>
+                        <tr>
+                            <th class="text-center">Tahun</th>
+                            <th class="text-center">Status Laporan</th>
                             <th class="text-center">Total</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr style="border-bottom: 1px solid black;">
-                            <td class="text-center" style="border-right: 2px solid black;">2025</td>
-                            <td class="text-center" style="border-right: 2px solid black;">Memuaskan 😊</td>
+                        <tr>
+                            <td class="text-center">2025</td>
+                            <td class="text-center">Memuaskan 😊</td>
                             <td class="text-center">1000</td>
                         </tr>
-                        <tr style="border-bottom: 1px solid black;">
-                            <td class="text-center" style="border-right: 2px solid black;">2025</td>
-                            <td class="text-center" style="border-right: 2px solid black;">Cukup Memuaskan 👍</td>
+                        <tr>
+                            <td class="text-center">2025</td>
+                            <td class="text-center">Cukup Memuaskan 👍</td>
                             <td class="text-center">1000</td>
                         </tr>
-                        <tr style="border-bottom: 1px solid black;">
-                            <td class="text-center" style="border-right: 2px solid black;">2025</td>
-                            <td class="text-center" style="border-right: 2px solid black;">Kurang Memuaskan ☹️</td>
+                        <tr>
+                            <td class="text-center">2025</td>
+                            <td class="text-center">Kurang Memuaskan ☹️</td>
                             <td class="text-center">1000</td>
                         </tr>
                     </tbody>

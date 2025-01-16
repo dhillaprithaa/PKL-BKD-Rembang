@@ -1,6 +1,5 @@
 @extends('layouts.master')
 
-
 @section('content')
     <section class="content-header text-center">
         <h1>
@@ -41,57 +40,63 @@
         </script>
 
 
-        <br> <br>
-        <table id="example" class="display" style="width:100%;">
-            <thead class="text-center">
-                <tr>
-                    <th width="2px">No.</th>
-                    <th>No. Ticketing</th>
-                    <th>Hari/Tanggal</th>
-                    <th>Nama Pelapor</th>
-                    <th>Judul Pengaduan</th>
-                    <th>Deskripsi Pengaduan</th>
-                    <th>Proses</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>LAPOR0001</td>
-                    <td>Kamis/1 Jan 2024</td>
-                    <td>Dhila Aprilia</td>
-                    <td>Pemberkasan P3K</td>
-                    <td>Lupa melampirkan materai 10.000 apakah harus submit ulang?</td>
-                    <td><span class="label bg-yellow">Pending</span></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>LAPOR0002</td>
-                    <td>Kamis/1 Jan 2024</td>
-                    <td>Dhila Aprilia</td>
-                    <td>Pemberkasan P3K</td>
-                    <td>Lupa melampirkan materai 10.000 apakah harus submit ulang?</td>
-                    <td><span class="label bg-blue">Sedang diproses</span></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>LAPOR0003</td>
-                    <td>Kamis/1 Jan 2024</td>
-                    <td>Dhila Aprilia</td>
-                    <td>Pemberkasan P3K</td>
-                    <td>Lupa melampirkan materai 10.000 apakah harus submit ulang?</td>
-                    <td><span class="label bg-green">Selesai</span></td>
-                </tr>
-            </tbody>
-        </table>
+        <br><br>
+        <div class="table-container" style="width: 100%; margin: auto; text-align: justify;">
+            <table id="example" class="display" style="width:100%; border-collapse: collapse; text-align: justify;">
+                <thead style="background-color: #f8f9fa;">
+                    <tr>
+                        <th style="padding: 8px;">No.</th>
+                        <th style="padding: 8px;">No. Ticketing</th>
+                        <th style="padding: 8px;">Hari/Tanggal</th>
+                        <th style="padding: 8px;">Nama Pelapor</th>
+                        <th style="padding: 8px;">Judul Pengaduan</th>
+                        <th style="padding: 8px;">Deskripsi Pengaduan</th>
+                        <th style="padding: 8px;">Proses</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-center" style="padding: 8px;">1</td>
+                        <td class="text-center" style="padding: 8px;">LAPOR0001</td>
+                        <td class="text-center" style="padding: 8px;">Kamis/1 Jan 2024</td>
+                        <td class="text-center" style="padding: 8px;">Dhila Pritha Amalia</td>
+                        <td class="text-center" style="padding: 8px;">Pemberkasan P3K</td>
+                        <td style="padding: 8px; text-align: justify;">Lupa melampirkan materai 10.000 apakah harus submit ulang?</td>
+                        <td class="text-center" style="padding: 8px;"><span class="label bg-yellow">Pending</span></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center" style="padding: 8px;">2</td>
+                        <td class="text-center" style="padding: 8px;">LAPOR0002</td>
+                        <td class="text-center" style="padding: 8px;">Kamis/1 Jan 2024</td>
+                        <td class="text-center" style="padding: 8px;">Kaifano Zylanda De Forza</td>
+                        <td class="text-center" style="padding: 8px;">Pemberkasan P3K</td>
+                        <td style="padding: 8px; text-align: justify;">Kapan pengumuman P3K untuk Final</td>
+                        <td class="text-center" style="padding: 8px;"><span class="label bg-blue">Sedang diproses</span></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center" style="padding: 8px;">3</td>
+                        <td class="text-center" style="padding: 8px;">LAPOR0003</td>
+                        <td class="text-center" style="padding: 8px;">Kamis/1 Jan 2024</td>
+                        <td class="text-center" style="padding: 8px;">Ferry Firmansyah</td>
+                        <td class="text-center" style="padding: 8px;">Pemberkasan P3K</td>
+                        <td style="padding: 8px; text-align: justify;">Upload pas foto selalu gagal, bagaimana solusinya?</td>
+                        <td class="text-center" style="padding: 8px;"><span class="label bg-green">Selesai</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </section>
-
-
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function() {
-            $('#example').DataTable();
+            $('#example').DataTable({
+                responsive: true,
+                pageLength: 5,
+                lengthChange: false,
+                searching: false,
+                info: false
+            });
         });
     </script>
 @endsection
