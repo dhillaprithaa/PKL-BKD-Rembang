@@ -27,19 +27,19 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleInputtext3">Nama</label>
-                        <input type="text" class="form-control" id="exampleInputtext3" placeholder="Nama anda...">
+                        <input type="text" class="form-control" id="exampleInputtext3" placeholder="Nama Anda...">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputtext4">Alamat</label>
-                        <input type="text" class="form-control" id="exampleInputtext4" placeholder="Alamat anda...">
+                        <input type="text" class="form-control" id="exampleInputtext4" placeholder="Alamat Anda...">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputtext5">Nomor WA</label>
-                        <input type="text" class="form-control" id="exampleInputtext5" placeholder="Nomor WA anda...">
+                        <input type="text" class="form-control" id="exampleInputtext5" placeholder="Nomor WA/Telephon Anda...">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputtext6">Deskripsi Pengaduan</label>
-                        <textarea class="form-control" id="exampleInputtext6" placeholder="Jelaskan masalah..."></textarea>
+                        <textarea class="form-control" id="exampleInputtext6" placeholder="Deskripsikan Masalah Anda..."></textarea>
                     </div>
                     <div class="form-group" style="padding: 10px;">
                         <h5>Bagaimana pendapat anda tentang Layanan BKD Online Rembang?</h5>

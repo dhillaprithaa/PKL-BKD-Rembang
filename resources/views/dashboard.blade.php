@@ -1,15 +1,15 @@
 @extends('layouts.master')
 
 @section('content')
-    <section class="content-header text-center">
-        <h1>
-            Dashboard Layanan BKD Kabupaten Rembang
-        </h1>
-        <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Dashboard</li>
-        </ol>
-        <br> <br>
+<section class="content-header text-center">
+    <h1 style="font-weight: bold;">
+        Dashboard Layanan BKD Kabupaten Rembang
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="active">Dashboard</li>
+    </ol>
+    <br> <br>
 
         <div class="table-container" style="flex: 1; max-width: 800px; margin: auto;">
             <h4 class="text-center">Laporan Masuk Pengaduan Masyarakat</h4>

@@ -2,7 +2,7 @@
 
 @section('content')
     <section class="content-header text-center">
-        <h1>
+        <h1 style="font-weight: bold;">
             LAPORAN PENGADUAN
         </h1>
         <ol class="breadcrumb">

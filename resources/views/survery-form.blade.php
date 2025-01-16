@@ -2,15 +2,16 @@
 
 @section('content')
     <section class="content-header text-center">
-        <h1>
+        <h1 style="font-weight: bold;">
             SURVEY KEPUASAN MASYARAKAT
         </h1>
-        <h4 style="margin-top:10px;">TERHADAP LAYANAN PENGADUAN</h4>
+        <h4 style="margin-top:10px; font-weight: bold;">TERHADAP LAYANAN PENGADUAN</h4>
         <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
             <li class="active">Dashboard</li>
             <li class="active">Statistik</li>
         </ol>
+
 
         <div class="box box-primary" style="margin-top:20px; max-width: 400px; margin-left: auto; margin-right: auto;">
             <div class="box-header with-border text-center">
@@ -28,14 +29,8 @@
                     </div>
                     <div class="form-group">
                         <label for="usia">Usia</label>
-                        <select class="form-control" id="usia" name="usia">
-                            <option value="" disabled selected>Pilih Usia</option>
-                            <option value="17-25">17-25</option>
-                            <option value="26-45">26-45</option>
-                            <option value="46-60">46-60</option>
-                        </select>
+                        <input type="number" class="form-control" id="usia" name="usia" placeholder="Masukkan Usia">
                     </div>
-
                     <div class="form-group">
                         <label for="jenisKelamin">Jenis Kelamin</label>
                         <select class="form-control" id="jenisKelamin" name="jenisKelamin">
